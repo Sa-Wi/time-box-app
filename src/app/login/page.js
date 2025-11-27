@@ -69,14 +69,14 @@ export default function Login() {
               />
             </div>
 
-            <Button type="submit" disabled={loading} className="w-full shadow-lg hover:shadow-xl transition-all duration-300 font-bold text-lg h-12">
+            <Button type="submit" disabled={loading} className="hover:bg-white hover:text-black border-1 border-primary w-full shadow-lg hover:shadow-xl transition-all duration-300 font-bold text-lg h-12">
               {loading ? 'Signing in...' : 'Sign In'}
             </Button>
           </form>
         </CardContent>
         <CardFooter className="justify-center">
           <p className="text-sm text-muted-foreground">
-            Don't have an account? <Link href="/signup" className="text-primary hover:underline">Sign up</Link>
+            Don't have an account? <Link href="/signup" className="text-primary font-bold underline">Sign up</Link>
           </p>
         </CardFooter>
       </Card>
